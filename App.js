@@ -13,7 +13,7 @@ class Movie extends React.Component {
 
             </View>
 
-            <View style={styles.TitleAndVotes}>
+            <View style={styles.titleAndVotes}>
               <Text style={styles.title}>{this.props.movie.title}</Text>
               <Text style={styles.votes}>{this.props.movie.vote_average}</Text>
 
@@ -94,12 +94,12 @@ const styles = StyleSheet.create({
     paddingLeft: 20
   },
   movie: {
-    flex: 8,
+    flex: 7,
     justifyContent: 'space-between',
     backgroundColor: '#000',
     width: '100%',
     height: '100%',
-    marginTop: 0,
+    margin: 0,
     padding: 0,
   },
   backdrop: {
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     resizeMode: 'cover',
-    opacity: 0.5
+    opacity: 0.3
   },
   posterContainer: {
     flex: 4
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    resizeMode: 'contain'
+    resizeMode: 'cover'
   },
   titleAndVotes: {
     flex: 1,
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
     flex: 3,
     color: '#fff',
     width: 360,
-    fontSize: 17,
+    fontSize: 18,
     fontWeight: '300',
     lineHeight: 23,
     marginLeft: 20,
